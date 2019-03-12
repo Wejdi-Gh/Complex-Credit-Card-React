@@ -2,7 +2,9 @@
   "name": "complex_credit_card",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://wejdi-gh.github.io/Complex-Credit-Card-React/", 
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.5"
@@ -10,6 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+	"predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
